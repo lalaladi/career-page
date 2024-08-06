@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
         markers: true
       }
     })
-    .to("img", {
+    .to(".header-img", {
       scale: 2,
       z: 350,
       transformOrigin: "center center",
