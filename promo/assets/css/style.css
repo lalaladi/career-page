@@ -2707,23 +2707,61 @@ h6 {
 }
 
 .About_me {
-  background: rgb(5, 0, 89);
-  background: linear-gradient(
-    212deg,
-    rgba(5, 0, 89, 1) 0%,
-    rgba(9, 9, 121, 1) 60%,
-    rgba(0, 166, 199, 1) 100%
-  );
-  height: 100vh;
-  /* background-size: 700px; */
-  padding-left: 0%;
-  background-position: 50% 50%;
-}
+	background: linear-gradient(1deg, #020039, #13106C, #1C1986);
+	height: 90vh;
+	background-size: 700px;
+	padding-left: 0%;
+	background-position: 50% 50%;
+  }
 
-.text {
-  color: white;
-  /* padding: 5%; */
-  padding-top: 14%;
-  padding-left: 60%;
-  font-size: 2.5rem;
-}
+  .img-container {
+	position: absolute;
+	width: 100%;
+	height: 100vh; 
+	}
+
+  .image1 {
+	width: 30%;
+	margin-left: 10%;
+	margin-top: 14%;
+	position: absolute;
+	opacity: 25%;
+	}
+
+  .image3 {
+	width: 25%;
+	margin-left: 10%;
+	margin-top: 14%;
+	position: absolute;
+	transform: translate(-25%, -25%); 
+	}
+
+  .image2 {
+	width: 30%;
+	margin-left: 10%;
+	margin-top: 14%;
+	position: absolute;
+	transform: translate(-10%, -15%); 
+	}
+
+  .text {
+	position: absolute;
+	color: white;
+	padding-top: 12%;
+	padding-left: 50%; 
+	width: 90%; 
+	}
+
+  .text h2 {
+	color: #13106C;
+	font-weight: bold;
+	font-size: 25px;
+	-webkit-text-stroke: 0.5px white;
+	margin: 0; 
+	}
+
+  .text p {
+	color: white;
+	font-size: 17px;
+	margin: 10px 0; 
+	}
