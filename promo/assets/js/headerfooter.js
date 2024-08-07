@@ -27,7 +27,7 @@ class Header extends HTMLElement {
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center ">
 
        <a href="index.html" class="logo me-auto"><img src="assets/img/logo.webp" alt="" class="img-fluid"></a>
 
