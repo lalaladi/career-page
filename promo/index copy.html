@@ -81,6 +81,59 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script>
+
+    #scalable-image {
+    width: 50%;
+    transition: transform 0.5s ease, width 0.5s ease; /* Transition for smooth resizing */
+    position: absolute; /* Ensure absolute positioning */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-60%, -50%); /* Center the image using transform */
+}
+
+  
+  
+  
+
+  
+    <!--  CDN  -->
+    <script
+      src="https://kit.fontawesome.com/cdde75dea2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Template Main CSS File -->
+    <link
+      href="assets/css/style.css"
+      rel="stylesheet"
+    />
+
+    <!--  ========================================================  -->
+    <!-- Spreadsheet API Form Pendaftaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Header -->
+    <script>
+      window.addEventListener('scroll', function() {
+          const image = document.getElementById('scalable-image');
+          const maxScale = 1; // scale factor when at the top
+          const minScale = 0.1; // scale factor when scrolled to the bottom
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const scrollFraction = scrollTop / docHeight;
+          const scale = maxScale - (maxScale - minScale) * scrollFraction;
+          
+          // Adjust position and scale of the image
+          const translateY = 130 * scrollFraction; // Adjust this value to move the image up/down as needed
+          const translateX = 400 * scrollFraction; // Adjust this value to move the image left/right as needed
+          image.style.transform = `scale(${scale}) translate(-${translateX}%, -${translateY}%)`;
+      });
+    </script>
+  
     function HeroForm() {
       $.ajax({
         url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
